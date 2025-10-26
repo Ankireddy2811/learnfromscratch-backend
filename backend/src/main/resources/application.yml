@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/learnfromscratch
+    username: root
+    password: Ankireddy@28052002
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # creates tables automatically
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+  application:
+    name: LearnFromScratchBackend
+
+jwt:
+  secret: MySuperSecretKeyForLearnFromScratch1234567890
+  expiration-ms: 900000  # 15 minutes for access token
+
+server:
+  port: 8080
